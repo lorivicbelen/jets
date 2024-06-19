@@ -1,0 +1,293 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  background: #f2e9e0;
+}
+
+body {
+  background: url(assets/icons/abstract.png), url(assets/icons/abstract.png);
+  background-position: left 100px bottom -220px, right -230px bottom 70px;
+  background-size: 300px, 340px;
+  background-repeat: no-repeat, no-repeat;
+}
+
+a,
+body {
+  font-size: 18px;
+  font-family: sans-serif;
+  font-weight: 700;
+  line-height: 1.75;
+}
+
+.section-m-y {
+  margin: 40px 0;
+}
+
+.section-bg-y {
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.section-p-x {
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
+.mt-0 {
+  margin-top: 0;
+}
+
+.ml-0 {
+  margin-left: 0;
+}
+
+.mb-0 {
+  margin-bottom: 0;
+}
+
+.pl-0 {
+  padding-left: 0;
+}
+
+.pr-0 {
+  padding-right: 0;
+}
+
+/* logo */
+
+.logo {
+  position: absolute;
+  top: 0;
+  right: 100px;
+  width: 240px;
+  aspect-ratio: 1/1;
+}
+
+.logo img {
+  width: 100%;
+  height: 100%;
+}
+
+/* lead */
+
+.lead {
+  width: 80%;
+  position: relative;
+  color: #fff;
+  padding-bottom: 50px;
+  margin-bottom: 100px;
+}
+
+.lead::before {
+  content: "JETS Partners (Japan English Teachers and Schools Partners)\Aオンラインサービスで、\Aこのすべてが手に入れることができるのです";
+  white-space: pre;
+  position: absolute;
+  width: fit-content;
+  padding: 20px 40px;
+  border-radius: 100vw;
+  left: 50%;
+  transform: translateX(-50%);
+  bottom: -100px;
+  background: #38b6ff;
+  word-wrap: break-word;
+  text-align: center;
+  color: #3652a3;
+  font-size: 22px;
+  line-height: 1.5;
+}
+
+.lead::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: #5771ff;
+  z-index: -1;
+  border-top-right-radius: 100vw;
+  border-bottom-right-radius: 100vw;
+}
+
+.lead_ttl {
+  font-size: 55px;
+  text-align: center;
+  margin-bottom: 16px;
+  line-height: 1.5;
+}
+
+.lead_desc {
+  font-size: 25px;
+  text-align: center;
+  line-height: 1.5;
+}
+
+/* about */
+
+.about {
+  display: flex;
+  justify-content: space-between;
+  color: #22709c;
+}
+
+.about_desc {
+  width: 50%;
+  height: fit-content;
+  padding-left: 5%;
+}
+
+.about_name {
+  margin-bottom: 8px;
+}
+
+.about-absolute {
+  width: 50%;
+  position: relative;
+}
+
+.wrapper-absolut iframe {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.about-absolute_vid01,
+.about-absolute_vid02 {
+  border-radius: 50%;
+  border: 15px solid #38b6ff;
+  overflow: hidden;
+  width: 100%;
+  aspect-ratio: 1/1;
+  object-fit: cover;
+}
+
+.about-absolute_vid01 {
+  width: 60%;
+  display: block;
+  margin-left: auto;
+  margin-top: -360px;
+}
+
+.about-absolute_vid02 {
+  width: 40%;
+  margin-top: -280px;
+  margin-left: 120px;
+}
+
+.about-absolute_link {
+  display: block;
+  background: #5271ff;
+  color: #fff;
+  border-top-left-radius: 100vw;
+  border-bottom-left-radius: 100vw;
+  padding: 30px 20px;
+  max-width: 500px;
+  margin-left: auto;
+  text-align: center;
+  margin-top: -30px;
+  font-size: 20px;
+  transition: 0.6s;
+}
+
+.about-absolute_link:hover {
+  opacity: 0.8;
+}
+
+.about_ttl {
+  margin-bottom: 8px;
+}
+
+.about_list01 {
+  list-style: none;
+}
+
+.about_list01 span {
+  display: inline-block;
+  width: 160px;
+}
+
+.about_list02 {
+  padding-left: 20px;
+}
+
+/* faq */
+.faq {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: -50px;
+  padding-bottom: 80px;
+}
+
+.faq,
+.faq_link {
+  color: #22709c;
+}
+
+.faq_img {
+  width: 20%;
+  position: relative;
+  left: 190px;
+}
+
+.faq_img::before {
+  content: "";
+  display: block;
+  width: 200px;
+  height: 60px;
+  background: #38b6ff;
+  position: absolute;
+  left: -190px;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+
+.faq_img-content {
+  width: 100%;
+  overflow: hidden;
+  border-radius: 50%;
+  border: 15px solid #38b6ff;
+  aspect-ratio: 1/1;
+}
+
+.faq_img-content img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.faq_list {
+  width: 60%;
+  padding-right: 5%;
+}
+
+.faq_item .question::before {
+  content: "Q.";
+  font-size: 20px;
+  display: inline-block;
+  width: 30px;
+}
+
+.faq_item .answer::before {
+  content: "A.";
+  font-size: 20px;
+  display: inline-block;
+  width: 30px;
+}
+
+.faq_link {
+  font-size: 20px;
+  transition: 0.6s;
+}
+
+.faq_link:hover{
+  color: #38b6ff;
+}
